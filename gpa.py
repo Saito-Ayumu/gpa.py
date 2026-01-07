@@ -21,9 +21,6 @@ def get_score(grade):
 if sys.argv[1:]:
     grades_input = " ".join(sys.argv[1:]).replace(",", " ")
 else:
-    if sys.stdin.isatty():
-        grades_input = input("成績を空白またはカンマで区切ってください")
-    else:
         grades_input = sys.stdin.read().replace("", " ")
 
 grades = grades_input.split()
