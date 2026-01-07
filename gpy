@@ -7,18 +7,22 @@ import sys
 def get_score(grade):
     if grade == 'S':
         return 4
-    if grade == 'A':
+    elif grade == 'A':
         return 3
-    if grade == 'B':
+    elif grade == 'B':
         return 2
-    if grade == 'C':
+    elif grade == 'C':
         return 1
-    if grade == 'D':
+    elif grade == 'D':
         return 0
     else:
         return None
 
-grades_input = input("成績を空白で区切ってください")
+if sys.argv[1:]:
+    grades_input = " ".join(sys.argv[1:]).replace(",", " ")
+else:
+    grades_input = input("成績を空白で区切って入力してください")
+
 grades = grades_input.split()
 
 total = 0
@@ -37,3 +41,4 @@ if count > 0:
     print("GPAは%.2f です" % gpa)
 else:
     print("有効な成績が入力されていません")
+    sys.exit(1)
