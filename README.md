@@ -9,7 +9,7 @@
 ## 使い方
 
 ```bash
-$ ./gpa.py S A B C D
+$ ./gpa S A B C D
 GPAは2.00 です
 ```
 
@@ -19,7 +19,7 @@ GPAは2.00 です
 ```bash
 git clone https://github.com/Saito-Ayumu/gpy
 cd gpy
-chmod +x gpa.py test.bash
+chmod +x gpa test.bash
 ```
 ---
 
