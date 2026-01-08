@@ -32,7 +32,7 @@ for grade in grades:
         total += score
         count += 1
     else:
-        print(f"無効な成績を無視しました: {grade}")
+        print(f"無効な成績を無視しました: {grade}", file=sys.stderr)
 
 if count == 0:
     print("有効な成績が入力されていません")
