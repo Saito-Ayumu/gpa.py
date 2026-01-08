@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env bash
 # SPDX-FileCopyrightText: 2025 Ayumu Saito
 # SPDX-License-Identifier: BSD-3-Clause
 
@@ -10,9 +10,7 @@ ng () {
 res=0
 
 out=$(echo "A B D A" | ./gpa.py)
-[ "$out" = "GPAは2.00" ]
+[ "${out}" = "GPAは2.00" ] || ng "$LINENO"
 
-if echo "A X" | ./gpy >/dev/null 2>/dev/null; then
-	res=1
-
+[ "${res}" = 0 ] && echo OK
 exit $res
