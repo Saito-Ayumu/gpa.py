@@ -10,7 +10,7 @@
 
 ```bash
 $ echo S A B C D | ./gpa
-GPAは2.00 です
+2.00
 ```
 
 ---
