@@ -17,8 +17,8 @@ GPAは2.00 です
 
 ## インストール
 ```bash
-git clone https://github.com/Saito-Ayumu/gpa.py
-cd gpa.py
+git clone https://github.com/Saito-Ayumu/gpy
+cd gpy
 chmod +x gpa.py test.bash
 ```
 ---
