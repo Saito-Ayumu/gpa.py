@@ -1,4 +1,4 @@
-# gpa.py
+# gpa
 
 [![test](https://github.com/Saito-Ayumu/gpa.py/actions/workflows/test.yml/badge.svg)](https://github.com/Saito-Ayumu/gpa.py/actions/workflows/test.yml)
 
