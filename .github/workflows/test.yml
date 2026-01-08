@@ -19,7 +19,7 @@ jobs:
 
       - name: Make scripts executable
         run: |
-          chmod +x gpy test.bash || true
+          chmod +x gpy.py test.bash || true
 
       - name: All test
         shell: bash
