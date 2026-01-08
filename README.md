@@ -1,5 +1,7 @@
 # gpa.py
 
+[![test](https://github.com/Saito-Ayumu/gpa.py/actions/workflows/test.yml/svg)](https://github.com/Saito-Ayumu/gpa.py/actions/workflows/test.yml)
+
 成績(S,A,B,C,D)を入力しGPAを計算します。
 
 ---
