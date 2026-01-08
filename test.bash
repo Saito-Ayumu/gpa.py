@@ -9,7 +9,7 @@ ng () {
 
 res=0
 
-out=$(echo "A B D A" | ./gpa.py)
+out=$(echo "A B D A" | ./gpa)
 [ "${out}" = "GPAは2.00 です" ] || ng "$LINENO"
 
 [ "${res}" = 0 ] && echo OK

@@ -9,7 +9,7 @@
 ## 使い方
 
 ```bash
-$ ./gpa S A B C D
+$ echo S A B C D | ./gpa
 GPAは2.00 です
 ```
 
