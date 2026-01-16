@@ -12,5 +12,9 @@ res=0
 out=$(echo "A B D A" | ./gpa)
 [ "${out}" = "2.00" ] || ng "$LINENO"
 
+err=$(echo "" | ./gpa 2>&1 >/dev/null || true)
+[ "${err}" = "有効な成績が入力されていません" ] || ng "$LINENO"
+
 [ "${res}" = 0 ] && echo OK
 exit $res
+
